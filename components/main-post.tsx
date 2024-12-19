@@ -4,10 +4,10 @@ import React from "react";
 const MainPost = () => {
   return (
     <div className="h-[550px] bg-gray-100 flex items-center">
-      <div className="w-2/3 mx-auto">
-      <div className="grid grid-cols-2 gap-10">
+      <div className="md:w-2/3 w-[85%] mx-auto">
+      <div className="grid md:grid-cols-2 gap-10">
         {/* text */}
-        <div>
+        <div className="md:order-first order-last">
             <div className="flex gap-3 text-sm text-gray-500">
                 <span>Nextjs</span>
                 <span>Dec 10, 2024</span>
@@ -20,7 +20,7 @@ const MainPost = () => {
         </div>
 
         {/* Image */}
-        <div className="">
+        <div className="md:mt-0 mt-32">
           <Image
             src={"/images/meteor.jpg"}
             alt="meteor"

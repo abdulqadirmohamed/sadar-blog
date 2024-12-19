@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import TopHeader from "@/components/top-header";
 
 const jostSans = Jost({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${jostSans.variable} antialiased`}
       >
+        <TopHeader/>
         <Header/>
         {children}
       </body>

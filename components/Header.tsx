@@ -1,5 +1,4 @@
-import { Rss, Search, SunMoon } from "lucide-react";
-import Image from "next/image";
+import { Rss, Search } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -9,26 +8,14 @@ const Header = () => {
     { id: 2, title: "Next.js" },
     { id: 3, title: "js" },
     { id: 4, title: "rust" },
-    { id: 5, title: "WebAssembly" },
-    { id: 6, title: "security" },
-    { id: 7, title: "engineering" },
-    { id: 8, title: "changelog" },
+    { id: 5, title: "culture" },
+    { id: 6, title: "somalia" },
+    { id: 7, title: "technology" },
+    { id: 8, title: "jobs" },
   ];
   return (
     <div className="">
-      <div className="border-b ">
-        <div className="w-2/3 mx-auto flex justify-between items-center">
-          <Image className="-ml-8" src={"/images/logo.svg"} alt="logo" width={200} height={100} />
-          <div className="flex items-center gap-3">
-            <Link href={""} className="text-sm">
-              arcjet.com
-            </Link>
-            <SunMoon size={20} />
-          </div>
-        </div>
-      </div>
-
-      <div className="border-b">
+      <div className="border-b bg-gray-50">
         <div className="w-2/3 mx-auto">
           <div className="flex items-center justify-between py-6 capitalize text-gray-600">
             <nav className="space-x-6">
